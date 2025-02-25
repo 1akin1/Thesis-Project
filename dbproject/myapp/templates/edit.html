@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+  
+{% block title %}Update Thesis Details{% endblock title %}
+  
+{% block content %}
+<div class="col-md-12">
+<form method="POST" class="post-form" action="/update/{{ employee.id }}/">  
+        {% csrf_token %}  
+        <div class="container">   
+            <div class="col-12">  
+                <h3>Update Details</h3>  
+            </div> 
+            <div class="mb-3"> 
+                <label>Author:</label>  
+                {{ form.author }}
+            </div> 
+            <div class="mb-3"> 
+                <label>Type:</label>  
+                {{ form.title }}
+            </div> 
+            <div class="mb-3"> 
+                <label>Title:</label>  
+                {{ form.language }}
+            </div> 
+            <div class="mb-3"> 
+                <label>Abstract:</label>  
+                {{ form.abstract }}
+            </div> 
+            <div class="mb-3"> 
+                <label>University/Institute:</label>  
+                {{ form.university }}
+            </div> 
+            <div class="mb-3"> 
+                <label>Keyword:</label>  
+                {{ form.keyword }}
+            </div> 
+            <div class="mb-3"> 
+                <label>Subject/Language:</label>  
+                {{ form.subject }}
+            </div> 
+            <div class="mb-3"> 
+                <label>Supervisor:</label>  
+                {{ form.supervisor }}
+            </div> 
+            <div class="mb-3"> 
+                <label>Cosupervisor:</label>  
+                {{ form.cosupervisor }}
+            </div> 
+            <div class="mb-3"> 
+                <label>Date:</label>  
+                {{ form.institute }}
+            </div> 
+            <div class="mb-3"> 
+                <button type="submit" class="btn btn-success btn-lg">Update</button>  
+            </div> 
+        </div>  
+    </form>  
+</div>
+{% endblock content %}
