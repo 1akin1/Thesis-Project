@@ -14,7 +14,7 @@ Update: Edit existing thesis records.
 
 Delete: Delete thesis records from the database.
 
-Technologies Used
+## Technologies Used
 
 Django: Web framework for building the application.
 
@@ -22,7 +22,7 @@ MySQL: Database management system to store thesis data.
 
 Bootstrap: Frontend framework for responsive and modern design.
 
-Prerequisites
+## Prerequisites
 Before setting up the project, ensure you have the following installed:
 
 Python 3.x
@@ -31,7 +31,8 @@ MySQL Database server
 
 Django 3.x or higher
 
-Setup Instructions
+
+## Setup Instructions
 
 Create the Project Directory
 
@@ -51,7 +52,7 @@ source virt/Scripts/activate (For Windows)
 
 source virt/bin/activate (On macOS/Linux)
 
-Install Dependencies
+## Install Dependencies
 
 Install the required packages for Django and MySQL integration:
 
@@ -61,7 +62,7 @@ pip install mysqlclient
 
 pip install mysql-connector-python
 
-Create the Django Project
+## Create the Django Project
 
 Create a new Django project to manage the thesis data:
 
@@ -69,13 +70,13 @@ django-admin startproject dbproject
 
 cd dbproject
 
-Create a Django App
+## Create a Django App
 
 Generate a new app within the project to handle the thesis records:
 
 python manage.py startapp web
 
-Create the Database (Optional)
+## Create the Database (Optional)
 
 If you need to manually create the database, you can write a script and run it. Typically, Django handles database creation automatically:
 
@@ -83,13 +84,13 @@ touch db.py
 
 python db.py (Run if necessary)
 
-Run Migrations
+## Run Migrations
 
 Migrate the database schema to set up the required tables:
 
 python manage.py migrate
 
-Create a Superuser
+## Create a Superuser
 
 Create a superuser account for accessing the Django admin panel:
 
@@ -99,7 +100,7 @@ python manage.py createsuperuser (On macOS/Linux)
 
 Follow the prompts to set up the superuser credentials.
 
-Start the Development Server
+## Start the Development Server
 
 Run the development server to begin using the application:
 
@@ -107,7 +108,7 @@ python manage.py runserver
 
 You can now access the app by visiting http://127.0.0.1:8000/ in your web browser.
 
-Testing the Application
+## Testing the Application
 
 Once the server is running, test the following features:
 
