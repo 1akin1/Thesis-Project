@@ -1,4 +1,5 @@
 Thesis Database Management System
+
 This Django web application is designed to manage thesis-related data. It allows users to add, view, update, search, and delete thesis records in a MySQL database, providing a user-friendly interface to manage thesis details such as title, author, type, and year.
 
 Features
