@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Thesis Data{% endblock title %}
+
+{% block content %}
+<div class="col-md-12">
+    <span><a href="/addnew" class="btn btn-primary">Add New Record</a></span>
+    <div class="table-responsive">
+        <table id="bootstrapdatatable" class="table table-striped table-bordered" width="100%">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="checkall" /></th>
+                    <th>ID</th>
+                    <th>Author</th>
+                    <th>Type</th>
+                    <th>Title</th>
+                    <th>Abstract</th>
+                    <th>University/Institute</th>
+                    <th>Keyword</th>
+                    <th>Subject/Language</th>
+                    <th>Supervisor</th>
+                    <th>CoSupervisor</th>
+                    <th>Date</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for thesis in thesiss %}
+                <tr>
+                    <td><input type="checkbox" class="checkthis" /></td>
+                    <td>{{ thesis.id }}</td>
+                    <td>{{ thesis.author }}</td>
+                    <td>{{ thesis.type }}</td>  
+                    <td class="title-column">{{ thesis.title }}</td>
+                    <td>{{ thesis.abstract }}</td>
+                    <td>{{ thesis.university }}</td>
+                    <td>{{ thesis.keyword }}</td>
+                    <td>{{ thesis.subject }}</td>
+                    <td>{{ thesis.supervisor }}</td>
+                    <td>{{ thesis.cosupervisor }}</td>
+                    <td>{{ thesis.date }}</td>  {# Fixed incorrect placement of institute field #}
+                    <td><a href="/update/{{ thesis.id }}" class="btn btn-primary">Edit</a></td>
+                    <td><a href="/delete/{{ thesis.id }}" class="btn btn-danger">Delete</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock content %}
