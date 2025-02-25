@@ -1,5 +1,4 @@
-# Thesis Database Management System
-
+Thesis Database Management System
 This Django web application is designed to manage thesis-related data. It allows users to add, view, update, search, and delete thesis records in a MySQL database, providing a user-friendly interface to manage thesis details such as title, author, type, and year.
 
 Features
@@ -33,7 +32,7 @@ Copy
 Edit
 python -m venv virt
 source virt/Scripts/activate  # For Windows
-On macOS/Linux:
+# On macOS/Linux:
 source virt/bin/activate
 3. Install Dependencies
 Install Django and MySQL connectors using pip:
@@ -81,7 +80,7 @@ bash
 Copy
 Edit
 winpty python manage.py createsuperuser  # For Windows
-On macOS/Linux:
+# On macOS/Linux:
 python manage.py createsuperuser
 Follow the prompts to set up your admin credentials.
 
