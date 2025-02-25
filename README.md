@@ -25,6 +25,7 @@ Copy
 Edit
 mkdir /c/django
 cd /c/django
+
 2. Set Up a Virtual Environment
 Create and activate a virtual environment:
 
