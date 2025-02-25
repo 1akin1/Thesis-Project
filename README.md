@@ -33,8 +33,8 @@ Copy
 Edit
 python -m venv virt
 source virt/Scripts/activate  # For Windows
-# On macOS/Linux:
-# source virt/bin/activate
+On macOS/Linux:
+source virt/bin/activate
 3. Install Dependencies
 Install Django and MySQL connectors using pip:
 
@@ -81,8 +81,8 @@ bash
 Copy
 Edit
 winpty python manage.py createsuperuser  # For Windows
-# On macOS/Linux:
-# python manage.py createsuperuser
+On macOS/Linux:
+python manage.py createsuperuser
 Follow the prompts to set up your admin credentials.
 
 9. Run the Development Server
