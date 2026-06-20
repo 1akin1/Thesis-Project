@@ -3,6 +3,7 @@
 A Django-based web application for managing thesis records. Create, view, search, update, and delete thesis entries through a clean, responsive interface backed by a MySQL database.
 
 <img width="1593" height="846" alt="1" src="https://github.com/user-attachments/assets/44f13b4b-0bea-4e48-bfdd-fe9593c98437" />
+<img width="1193" height="766" alt="lab23" src="https://github.com/user-attachments/assets/5ff4bf82-232b-4c2a-8ad7-7a9ce6d7051e" />
 
 
 ---
